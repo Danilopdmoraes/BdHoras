@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Editar Grupo";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Área do Gestor</h1>
+    <p>Espaço para editar o grupo: nome, funcionários, excluir o grupo</p>
+</div>
+
+
+<div class="d-flex justify-content-center">
+    <div class="col-12 col-sm-11 col-md-10 col-lg-7 col-xl-6">
+        <div class="table-responsive-sm">
+
+            <form>
+
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Nome do Grupo:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="aparecerá o nome atual do Grupo aqui">
+                </div>
+
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Pesquisar Funcionário</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite um nome ou matrícula">
+                </div>
+
+                <div class="d-grid gap-2">
+                    <a class="btn btn-primary" role="button">Adicionar ao grupo</a>
+                </div>
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Funcionário</th>
+                            <th scope="col" class="text-end">Saldo</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Silvio Santos</td>
+                            <td class="text-end">07:00</td>
+                            <td>
+                                <div class="d-flex justify-content-end">
+                                    <div class="btn-group w-auto" role="group" aria-label="Basic example">
+                                        @* <button type="button" class="btn btn-primary">Editar</button> *@
+                                        <button type="button" class="btn btn-danger">Remover</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fausto Silva</td>
+                            <td class="text-end">-12:00</td>
+                            <td>
+                                <div class="d-flex justify-content-end">
+                                    <div class="btn-group w-auto" role="group" aria-label="Basic example">
+                                        @* <button type="button" class="btn btn-primary">Editar</button> *@
+                                        <button type="button" class="btn btn-danger">Remover</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Serginho Malandro</td>
+                            <td class="text-end">03:00</td>
+                            <td>
+                                <div class="d-flex justify-content-end">
+                                    <div class="btn-group w-auto" role="group" aria-label="Basic example">
+                                        @* <button type="button" class="btn btn-primary">Editar</button> *@
+                                        <button type="button" class="btn btn-danger">Remover</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>João Kleber</td>
+                            <td class="text-end">-02:00</td>
+                            <td>
+                                <div class="d-flex justify-content-end">
+                                    <div class="btn-group w-auto" role="group" aria-label="Basic example">
+                                        @* <button type="button" class="btn btn-primary">Editar</button> *@
+                                        <button type="button" class="btn btn-danger">Remover</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-secondary">Salvar Alterações</button>
+                    <a class="btn btn-danger" role="button" asp-controller="Gestores" asp-action="Index">Cancelar</a>
+                    <br />
+                    <a class="btn btn-danger" role="button" asp-controller="Gestores" asp-action="ConfirmarExcluirGrupo">Excluir o Grupo</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

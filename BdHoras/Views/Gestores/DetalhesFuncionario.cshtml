@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = "Detalhamento do Funcionário";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Área do Gestor</h1>
+    <p>Espaço que exibe detalhadamente os dias, horas, observações e campos para edição de apontamentos</p>
+</div>
+
+<div class="d-flex justify-content-center">
+    <div class="col-12 col-sm-10 col-md-8">
+        <div class="table-responsive-sm">
+
+            <p class="fs-4 text-center">Fausto Silva possui 1 dia, 4 horas e 30 minutos de saldo.</p>
+
+            <p>Filtrar por período:</p>
+
+            <div class="row">
+                <div class="col">
+                    <label for="dataDaOcorrencia" class="form-label">Data inicial:</label>
+                    <input id="dataDaOcorrencia" class="form-control" type="date" />
+                </div>
+                <div class="col">
+                    <label for="dataDaOcorrencia" class="form-label">Data final:</label>
+                    <input id="dataDaOcorrencia" class="form-control" type="date" />
+                </div>
+            </div>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Data</th>
+                        <th scope="col">Horas</th>
+                        <th scope="col">Observações</th>
+                        <th scope="col"></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>07/03/2025</td>
+                        <td>-08:00</td>
+                        <td>Acertou folga com o Diretor.</td>
+                        <td>
+                            <div class="d-flex justify-content-end">
+                                <div class="btn-group w-auto" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-primary">Editar</button>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10/03/2025</td>
+                        <td>02:00</td>
+                        <td>Finalizando aquele projeto.</td>
+                        <td>
+                            <div class="d-flex justify-content-end">
+                                <div class="btn-group w-auto" role="group" aria-label="Basic example">
+                                <p>Registrado pelo Gestor (Michel Temer)</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>07/03/2025</td>
+                        <td>-01:00</td>
+                        <td>Pediu para entrar mais tarde.</td>
+                        <td>
+                            <div class="d-flex justify-content-end">
+                                <div class="btn-group w-auto" role="group" aria-label="Basic example">
+                                <p>Registrado pelo Gestor (Itamar Franco)</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="d-grid gap-2">
+                <a class="btn btn-primary" role="button" asp-controller="Gestores" asp-action="NovoApontamento">Novo apontamento</a>
+                <a class="btn btn-danger" role="button" asp-controller="Gestores" asp-action="Index">Voltar</a>
+            </div>
+
+
+        </div>
+    </div>
+</div>

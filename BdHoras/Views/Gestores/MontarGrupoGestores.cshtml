@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Montagem de Grupo";
+}
+
+
+<div class="d-flex justify-content-center">
+    <div class="col-12 col-sm-11 col-md-10 col-lg-7 col-xl-6">
+        <div class="table-responsive-sm">
+
+            <div class="text-center">
+                <h1 class="display-4">Área do Gestor</h1>
+                <p>Espaço para montar um novo Grupo</p>
+            </div>
+
+            <form>
+
+
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Nome do Grupo:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="aparecerá o nome atual do Grupo aqui [TB_Gestores]">
+                </div>
+
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Pesquisar Funcionário</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite um nome ou matrícula [TB_Funcionarios]">
+                </div>
+
+                <div class="d-grid gap-2">
+                    <a class="btn btn-primary" role="button">Adicionar</a>
+                </div>
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Funcionário</th>
+                            <th scope="col" class="text-end">Saldo</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Silvio Santos</td>
+                            <td class="text-end">07:00</td>
+                            <td class="text">
+                                <div class="d-flex justify-content-end">
+                                    <div class="btn-group w-auto" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-danger">Remover</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                </table>
+
+
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary">Montar Grupo [TB_Vinculos]</button>
+                    <a class="btn btn-danger" role="button" asp-controller="Home" asp-action="Index">Cancelar</a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>

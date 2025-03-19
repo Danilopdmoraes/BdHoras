@@ -1,0 +1,5 @@
+﻿DELETE FROM AspNetUsers;
+DBCC CHECKIDENT ('AspNetUsers', RESEED, 0);
+
+DELETE FROM TB_Gestores;
+DBCC CHECKIDENT ('TB_Gestores', RESEED, 0);

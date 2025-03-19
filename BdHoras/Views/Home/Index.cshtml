@@ -1,0 +1,39 @@
+﻿@model GestoresModel;
+@{
+    ViewData["Title"] = "Principal";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Olá</h1>
+    <p><a asp-controller="Gestores" asp-action="CadastroGestores">Gestores - primeiro acesso [temporário durante o Desenvolvimento] (CadastroGestores)</a></p>
+    <p><a asp-controller="Gestores" asp-action="MontarGrupoGestores">Gestores - Montagem de Grupos - (MontarGrupoGestores)</a></p>
+    <p><a asp-controller="Gestores" asp-action="Index">Gestores - cadastrado, e Grupo montado - (Index)</a></p>
+    <p><a asp-controller="Gestores" asp-action="EditarGrupoGestores">Gestores - Edição de Grupos - (EditarGrupoGestores)</a></p>
+    <p><a asp-controller="Gestores" asp-action="DetalhesFuncionario">Gestores - Detalhes Individuais do Funcionário - (DetalhesFuncionario)</a></p>
+    <p><a asp-controller="Gestores" asp-action="NovoApontamento">Gestores - Novo Apontamento - (NovoApontamento)</a></p>
+
+    <br><hr><br>
+
+
+    <p><a asp-controller="Funcionarios" asp-action="CadastroFuncionarios">Funcionários - primeiro acesso</a></p>
+    <p><a asp-controller="Funcionarios" asp-action="Index">Funcionários (cadastrados)</a></p>
+
+
+    <br><hr><br>
+
+
+</div>
+
+<div>
+    <p><strong>Id: </strong>@Model.IdGestor</p>
+    <p><strong>Nome: </strong>@Model.NomeGestor</p>
+    <p><strong>Email: </strong>@Model.EmailGestor</p>
+    <p><strong>IdExclusivo: </strong>@Model.IdExclusivo</p>
+    <p><strong>Grupo: </strong>@Model.NomeGrupo</p>
+</div>
+
+<br><hr><br>
+
+<div>
+    
+</div>
