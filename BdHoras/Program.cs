@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using BdHoras.Data;
 using BdHoras.Repository;
+using BdHoras.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,14 +15,19 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false; //default: true
-    options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+ "; //permite espaÁos no UserName
+    options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+ ·ÈÌÛ˙¡…Õ”⁄‚ÍÓÙ˚¬ Œ‘€„ı√’Á« "; //permite espaÁos e acentos no UserName
 })
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.AddScoped<GestoresService>();
+builder.Services.AddHttpContextAccessor();
+
+
 builder.Services.AddControllersWithViews();
 
 
+
 builder.Services.AddEntityFrameworkSqlServer()
-    //.AddDbContext<ApplicationDbContext>();
     .AddDbContext<ApplicationDbContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IGestoresRepository, GestoresRepository>();

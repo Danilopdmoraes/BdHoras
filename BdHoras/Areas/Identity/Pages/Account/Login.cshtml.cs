@@ -147,7 +147,8 @@ namespace BdHoras.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return LocalRedirect(returnUrl);
+                    //return LocalRedirect(returnUrl);
+                    return LocalRedirect(Url.Content("~/Gestores/CadastroGestores")); // redireciona para a página de nomear o Grupo pela primeira vez
                 }
                 if (result.RequiresTwoFactor)
                 {

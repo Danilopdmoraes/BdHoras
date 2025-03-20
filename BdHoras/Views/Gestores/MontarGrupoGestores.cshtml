@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<FuncionariosModel>
+
+@{
     ViewData["Title"] = "Montagem de Grupo";
 }
 
@@ -15,40 +17,57 @@
             <form>
 
 
-                <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label">Nome do Grupo:</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="aparecerá o nome atual do Grupo aqui [TB_Gestores]">
-                </div>
+                @* <div class="mb-3"> *@
+                @*     <label for="formGroupExampleInput" class="form-label">Nome do Grupo:</label> *@
+                @*     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="aparecerá o nome atual do Grupo aqui [TB_Gestores]"> *@
+                @* </div> *@
+
+                @* <p class="fs-4 text-center">Seu Grupo: @Model.NomeGrupo</p> *@
 
                 <div class="mb-3">
                     <label for="formGroupExampleInput" class="form-label">Pesquisar Funcionário</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite um nome ou matrícula [TB_Funcionarios]">
+                    <input type="text" class="form-control" id="funcionarioInput" placeholder="Digite um nome ou matrícula [TB_Funcionarios]">
                 </div>
 
                 <div class="d-grid gap-2">
-                    <a class="btn btn-primary" role="button">Adicionar</a>
+                    <a class="btn btn-primary" role="button" id="adicionarBtn">Adicionar</a>
                 </div>
 
-                <table class="table table-hover">
+
+
+                <table class="table table-hover" id="tabelaSelecionados">
                     <thead>
                         <tr>
-                            <th scope="col">Funcionário</th>
-                            <th scope="col" class="text-end">Saldo</th>
+                            <th scope="col">Matrícula</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Saldo</th>
+                            <th scope="col"></th>
+
+                            @* <th scope="col" class="text-end">Saldo</th> *@
                             <th></th>
                         </tr>
                     </thead>
+
+
+
                     <tbody>
-                        <tr>
-                            <td>Silvio Santos</td>
-                            <td class="text-end">07:00</td>
-                            <td class="text">
-                                <div class="d-flex justify-content-end">
-                                    <div class="btn-group w-auto" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-danger">Remover</button>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
+                        @* <tr> *@
+                        @*     <td>Silvio Santos</td> *@
+                        @*     <td class="text-end">07:00</td> *@
+                        @*     <td class="text"> *@
+
+
+                        @*         <div class="d-flex justify-content-end"> *@
+                        @*             <div class="btn-group w-auto" role="group" aria-label="Basic example"> *@
+                        @*                 <button type="button" class="btn btn-danger">Remover</button> *@
+                        @*             </div> *@
+                        @*         </div> *@
+
+                        @*     </td> *@
+                        @* </tr> *@
+                    </tbody>
+
                 </table>
 
 

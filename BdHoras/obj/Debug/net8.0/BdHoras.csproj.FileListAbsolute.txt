@@ -592,3 +592,4 @@ G:\PROJETOS\BdHoras\BdHoras\obj\Debug\net8.0\refint\BdHoras.dll
 G:\PROJETOS\BdHoras\BdHoras\obj\Debug\net8.0\BdHoras.pdb
 G:\PROJETOS\BdHoras\BdHoras\obj\Debug\net8.0\BdHoras.genruntimeconfig.cache
 G:\PROJETOS\BdHoras\BdHoras\obj\Debug\net8.0\ref\BdHoras.dll
+C:\PROJETOS\BdHoras\BdHoras\obj\Debug\net8.0\BdHoras.sourcelink.json
