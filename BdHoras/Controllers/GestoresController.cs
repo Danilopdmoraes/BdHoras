@@ -47,6 +47,10 @@ namespace BdHoras.Controllers
         {
             //var gestorLogado = _gestoresService.ObterGestorLogado();
             //return View(gestorLogado); // permite recuperar e exibir o nome do Grupo, que está em TB_Gestores
+
+            string userId =  User.FindFirstValue(ClaimTypes.NameIdentifier);
+            ViewBag.UserId = userId;
+
             return View();
         }
 
