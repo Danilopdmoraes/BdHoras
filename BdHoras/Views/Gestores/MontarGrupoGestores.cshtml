@@ -23,7 +23,7 @@
                 @*     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="aparecerá o nome atual do Grupo aqui [TB_Gestores]"> *@
                 @* </div> *@
 
-                @* <p class="fs-4 text-center">Seu Grupo: @Model.Gestores.FirstOrDefault(g => g.IdExclusivo == ViewBag.userId)</p> *@
+                <p class="fs-4 text-center">Seu Grupo: @ViewData["NomeGrupo"]</p>
 
                 <div class="mb-3">
                     <label for="formGroupExampleInput" class="form-label">Pesquisar Funcionário</label>
@@ -57,6 +57,8 @@
                     </tbody>
 
                 </table>
+
+
 
 
 

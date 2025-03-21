@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using BdHoras.Data;
 using BdHoras.Repository;
 using BdHoras.Services;
+using BdHoras.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,11 +20,14 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 })
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
-builder.Services.AddScoped<GestoresService>();
-builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<IGestoresService, GestoresService>();
+//builder.Services.AddHttpContextAccessor();
 
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Filters.Add<GestoresFilter>();
+});
 
 
 

@@ -11,46 +11,32 @@ namespace BdHoras.Controllers
 {
     public class GestoresController : Controller
     {
-        private readonly IGestoresRepository _gestorRepository;
         private readonly ApplicationDbContext _context;
-        private readonly GestoresService _gestoresService;
+        private readonly IGestoresRepository _gestorRepository;
+        private readonly IGestoresService _gestoresService;
 
-        public GestoresController(IGestoresRepository gestorRepository, ApplicationDbContext context, GestoresService gestoresService)
+        public GestoresController(IGestoresRepository gestorRepository, ApplicationDbContext context, IGestoresService gestoresService)
         {
-            _gestorRepository = gestorRepository;
             _context = context;
+            _gestorRepository = gestorRepository;
             _gestoresService = gestoresService;
         }
+        public IActionResult Index()
+        {
+            return View();
+        }
+
 
         [Authorize]
         public IActionResult CadastroGestores() // NomearGrupo() // Editar()
         {
-            //var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            //var gestorLogado = _context.TB_Gestores.FirstOrDefault(g => g.IdExclusivo == userId);
-
-            //return View(gestorLogado);
-            //return View();
-
-            var gestorLogado = _gestoresService.ObterGestorLogado();
-            return View(gestorLogado);
-        }
-
-        public IActionResult Index()
-        {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            ViewBag.UserId = userId;
             return View();
         }
+
 
         [Authorize]
         public IActionResult MontarGrupoGestores()
         {
-            //var gestorLogado = _gestoresService.ObterGestorLogado();
-            //return View(gestorLogado); // permite recuperar e exibir o nome do Grupo, que está em TB_Gestores
-
-            string userId =  User.FindFirstValue(ClaimTypes.NameIdentifier);
-            ViewBag.UserId = userId;
-
             return View();
         }
 
@@ -92,7 +78,7 @@ namespace BdHoras.Controllers
         }
 
 
-        public JsonResult Buscar(string termo) // 'termo' é o que está sendo digitado lá no input
+        public JsonResult Buscar(string termo) // BuscarFuncionario
         {
             var funcionarios = _context.TB_Funcionarios
                 .Where(f => f.MatriculaFuncionario.ToString().Contains(termo) || f.NomeFuncionario.Contains(termo) || f.EmailFuncionario.Contains(termo))

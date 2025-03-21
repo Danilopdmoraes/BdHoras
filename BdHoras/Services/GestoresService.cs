@@ -1,28 +1,22 @@
 ﻿using BdHoras.Data;
 using BdHoras.Models;
-using System.Security.Claims;
+using Microsoft.EntityFrameworkCore;
 
 namespace BdHoras.Services;
 
-public class GestoresService
+public class GestoresService : IGestoresService
 {
     private readonly ApplicationDbContext _context;
-    private readonly IHttpContextAccessor _httpContextAccessor;
 
-    public GestoresService(ApplicationDbContext context, IHttpContextAccessor httpContextAccessor)
+    public GestoresService(ApplicationDbContext context)
     {
         _context = context;
-        _httpContextAccessor = httpContextAccessor;
     }
 
-    public GestoresModel ObterGestorLogado()
+    public async Task<GestoresModel> ObterGestorPorIdExclusivoAsync(string idExclusivo) // compara os IDs e retorna o ID Identity
     {
-        var userId = _httpContextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.NameIdentifier);
-        if (userId == null)
-        {
-            return null;
-        }
-
-        return _context.TB_Gestores.FirstOrDefault(g => g.IdExclusivo == userId);
+        return await _context.TB_Gestores.FirstOrDefaultAsync(g => g.IdExclusivo == idExclusivo);
     }
+
+
 }
