@@ -1,4 +1,5 @@
 ﻿using BdHoras.Data;
+using BdHoras.Models;
 using BdHoras.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,5 +24,22 @@ namespace BdHoras.Controllers
 
             return View(viewModel);
         }
+
+
+
+
+
+        [HttpPost]
+        public IActionResult GravarGrupo([FromBody] List<VinculosModel> grupoSelecionado)
+        {
+            if (grupoSelecionado != null)
+            {
+                _context.TB_Vinculos.AddRange(grupoSelecionado);
+                _context.SaveChanges();
+            }
+            return Ok();
+        }
+
+
     }
 }

@@ -1,9 +1,13 @@
-﻿$(document).ready(function () {
+﻿
+var globalIdFuncionario = null;
+console.log(globalIdFuncionario);
+
+$(document).ready(function () {
     // Autocomplete
     $("#funcionarioInput").autocomplete({
         source: function (request, response) {
             $.ajax({
-                url: "/Gestores/Buscar",
+                url: "/Gestores/BuscarFuncionarios",
                 type: "GET",
                 data: { termo: request.term },
                 success: function (data) {
@@ -12,6 +16,7 @@
 
                     // Mapeia os dados para o formato esperado pelo autocomplete
                     var mappedData = $.map(suggestions, function (item) {
+
                         return {
                             label: item.matriculaFuncionario + " - " + item.nomeFuncionario + " - " + item.emailFuncionario,
                             value: item.idFuncionario,
@@ -41,6 +46,9 @@
             // Verifica se o item selecionado não é a mensagem de continuar digitando
             if (ui.item.value !== null) {
                 $("#funcionarioInput").val(ui.item.matricula + " - " + ui.item.nome + " - " + ui.item.email);
+
+                globalIdFuncionario = ui.item.value;
+                console.log(globalIdFuncionario);
             }
             return false;
         }
@@ -53,6 +61,7 @@
 
     // Adicionar funcionário à tabela
     $("#adicionarBtn").click(function () {
+        var idgestor = $("#IdGestor").val(); // acrescentado para trazer o ID Gestor. Em teste
         var valores = $("#funcionarioInput").val().split(" - ");
         var matricula = valores[0];
         var nome = valores[1];
@@ -61,6 +70,8 @@
         if (matricula && nome && email) {
             var newRow =
                 `<tr>
+                    <td>${idgestor}</td>
+                    <td>${globalIdFuncionario}</td>
                     <td>${matricula}</td>
                     <td>${nome}</td>
                     <td>${email}</td>
@@ -82,6 +93,34 @@
 
 
     // Gravar selecionados
+    $("#gravarBtn").click(function () {
+        var selecionados = [];
+        var timestamp = new Date().toISOString(); // Captura o timestamp no formato ISO
+
+        $("#tabelaSelecionados tbody tr").each(function () {
+            var idGestor = $(this).find("td:eq(0)").text();
+            var idFuncionario = $(this).find("td:eq(1)").text();
+
+            selecionados.push({ IdGestor: idGestor, IdFuncionario: idFuncionario, DataInicio: timestamp });
+        });
+
+        console.log(selecionados); // Apenas para verificar o resultado no console
+
+        $.ajax({
+            url: "/Vinculos/GravarGrupo",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(selecionados),
+            success: function () {
+                alert("Dados gravados com sucesso!");
+            }
+        });
+
+    });
+
+
+
+    // Gravar selecionados
     //$("#gravarBtn").click(function () {
     //    var selecionados = [];
     //    $("#tabelaSelecionados tbody tr").each(function () {
@@ -90,7 +129,6 @@
     //        var email = $(this).find("td:eq(2)").text();
     //        selecionados.push({ MatriculaFuncionario: matricula, NomeFuncionario: nome, EmailFuncionario: email });
     //    });
-
 
 
 

@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BdHoras")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d16e6b19a2a817c31e88a32f9512a2eda60b972")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cc12e7736f8eb1f1979c80aff8c4a0de80efe7e")]
 [assembly: System.Reflection.AssemblyProductAttribute("BdHoras")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BdHoras")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

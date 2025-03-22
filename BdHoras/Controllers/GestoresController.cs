@@ -78,7 +78,7 @@ namespace BdHoras.Controllers
         }
 
 
-        public JsonResult Buscar(string termo) // BuscarFuncionario
+        public JsonResult BuscarFuncionarios(string termo) // BuscarFuncionario
         {
             var funcionarios = _context.TB_Funcionarios
                 .Where(f => f.MatriculaFuncionario.ToString().Contains(termo) || f.NomeFuncionario.Contains(termo) || f.EmailFuncionario.Contains(termo))

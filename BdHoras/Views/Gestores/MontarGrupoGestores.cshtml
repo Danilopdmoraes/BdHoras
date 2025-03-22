@@ -23,7 +23,10 @@
                 @*     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="aparecerá o nome atual do Grupo aqui [TB_Gestores]"> *@
                 @* </div> *@
 
-                <p class="fs-4 text-center">Seu Grupo: @ViewData["NomeGrupo"]</p>
+                <p class="fs-4 text-center">Seu Grupo: @ViewData["NomeGrupo"] / Seu ID: @ViewData["IdGestor"]</p>
+
+                <!-- campo adicionado para passar o IdGestor para o site.js, para adicionar à tabela html e gravar no banco -->
+                <input id="IdGestor" value="@ViewData["IdGestor"]" hidden>
 
                 <div class="mb-3">
                     <label for="formGroupExampleInput" class="form-label">Pesquisar Funcionário</label>
@@ -63,7 +66,7 @@
 
 
                 <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary">Montar Grupo [TB_Vinculos]</button>
+                    <button type="submit" class="btn btn-primary" id="gravarBtn">Montar Grupo [TB_Vinculos]</button>
                     <a class="btn btn-danger" role="button" asp-controller="Home" asp-action="Index">Cancelar</a>
                 </div>
 
