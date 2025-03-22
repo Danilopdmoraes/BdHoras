@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KTf/G8/1b1E=",
+  "dgSpecHash": "fVWuTs9/NEU=",
   "success": true,
-  "projectFilePath": "G:\\PROJETOS\\BdHoras\\BdHoras\\BdHoras.csproj",
+  "projectFilePath": "D:\\OneDrive\\PROJETOS\\BdHoras\\BdHoras\\BdHoras.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Danilo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Danilo\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

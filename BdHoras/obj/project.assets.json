@@ -8361,19 +8361,19 @@
   },
   "packageFolders": {
     "C:\\Users\\Danilo\\.nuget\\packages\\": {},
-    "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "D:\\MicrosoftVisualStudioComponentes\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\PROJETOS\\BdHoras\\BdHoras\\BdHoras.csproj",
+      "projectUniqueName": "D:\\OneDrive\\PROJETOS\\BdHoras\\BdHoras\\BdHoras.csproj",
       "projectName": "BdHoras",
-      "projectPath": "G:\\PROJETOS\\BdHoras\\BdHoras\\BdHoras.csproj",
+      "projectPath": "D:\\OneDrive\\PROJETOS\\BdHoras\\BdHoras\\BdHoras.csproj",
       "packagesPath": "C:\\Users\\Danilo\\.nuget\\packages\\",
-      "outputPath": "G:\\PROJETOS\\BdHoras\\BdHoras\\obj\\",
+      "outputPath": "D:\\OneDrive\\PROJETOS\\BdHoras\\BdHoras\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\MicrosoftVisualStudioComponentes\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\Danilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8385,6 +8385,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8467,7 +8468,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

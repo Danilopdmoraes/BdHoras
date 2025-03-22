@@ -3,7 +3,17 @@ var globalIdFuncionario = null;
 console.log(globalIdFuncionario);
 
 $(document).ready(function () {
-    // Autocomplete
+    function getExistingFuncionarioIds() {
+        var ids = [];
+        $("#tabelaSelecionados tbody tr").each(function () {
+            var id = $(this).find("td:nth-child(2)").text().trim();
+            if (id) {
+                ids.push(id);
+            }
+        });
+        return ids;
+    }
+
     $("#funcionarioInput").autocomplete({
         source: function (request, response) {
             $.ajax({
@@ -11,12 +21,13 @@ $(document).ready(function () {
                 type: "GET",
                 data: { termo: request.term },
                 success: function (data) {
-                    // Limita o número de sugestões para 10
-                    var suggestions = data.slice(0, 7);
+                    var existingIds = getExistingFuncionarioIds();
 
-                    // Mapeia os dados para o formato esperado pelo autocomplete
+                    var suggestions = data.filter(function (item) {
+                        return !existingIds.includes(item.idFuncionario.toString());
+                    }).slice(0, 7);
+
                     var mappedData = $.map(suggestions, function (item) {
-
                         return {
                             label: item.matriculaFuncionario + " - " + item.nomeFuncionario + " - " + item.emailFuncionario,
                             value: item.idFuncionario,
@@ -26,7 +37,6 @@ $(document).ready(function () {
                         };
                     });
 
-                    // Se houver mais de 7 resultados, adiciona uma mensagem para continuar digitando
                     if (data.length > 7) {
                         mappedData.push({
                             label: "Continue digitando para ver mais resultados...",
@@ -37,31 +47,22 @@ $(document).ready(function () {
                         });
                     }
 
-                    // Retorna os dados mapeados
                     response(mappedData);
                 }
             });
         },
         select: function (event, ui) {
-            // Verifica se o item selecionado não é a mensagem de continuar digitando
             if (ui.item.value !== null) {
                 $("#funcionarioInput").val(ui.item.matricula + " - " + ui.item.nome + " - " + ui.item.email);
-
                 globalIdFuncionario = ui.item.value;
                 console.log(globalIdFuncionario);
             }
             return false;
         }
-    }); // até o 'select: function ()' está testado e funcionando
+    });
 
-
-
-
-
-
-    // Adicionar funcionário à tabela
     $("#adicionarBtn").click(function () {
-        var idgestor = $("#IdGestor").val(); // acrescentado para trazer o ID Gestor. Em teste
+        var idgestor = $("#IdGestor").val();
         var valores = $("#funcionarioInput").val().split(" - ");
         var matricula = valores[0];
         var nome = valores[1];
@@ -76,7 +77,7 @@ $(document).ready(function () {
                     <td>${nome}</td>
                     <td>${email}</td>
                     <td><p>saldo aqui<p></td>
-                    <td><button type="button" class="btn btn-danger">Remover</button></td>
+                    <td><button type="button" class="btn btn-danger remover">Remover</button></td>
                 </tr>`;
             $("#tabelaSelecionados tbody").append(newRow);
             $("#funcionarioInput").val("");
@@ -94,6 +95,7 @@ $(document).ready(function () {
 
     // Gravar selecionados
     $("#gravarBtn").click(function () {
+
         var selecionados = [];
         var timestamp = new Date().toISOString(); // Captura o timestamp no formato ISO
 
@@ -101,7 +103,11 @@ $(document).ready(function () {
             var idGestor = $(this).find("td:eq(0)").text();
             var idFuncionario = $(this).find("td:eq(1)").text();
 
-            selecionados.push({ IdGestor: idGestor, IdFuncionario: idFuncionario, DataInicio: timestamp });
+            selecionados.push({
+                IdGestor: idGestor,
+                IdFuncionario: idFuncionario,
+                DataInicio: timestamp
+            });
         });
 
         console.log(selecionados); // Apenas para verificar o resultado no console
@@ -118,31 +124,4 @@ $(document).ready(function () {
 
     });
 
-
-
-    // Gravar selecionados
-    //$("#gravarBtn").click(function () {
-    //    var selecionados = [];
-    //    $("#tabelaSelecionados tbody tr").each(function () {
-    //        var matricula = $(this).find("td:eq(0)").text();
-    //        var nome = $(this).find("td:eq(1)").text();
-    //        var email = $(this).find("td:eq(2)").text();
-    //        selecionados.push({ MatriculaFuncionario: matricula, NomeFuncionario: nome, EmailFuncionario: email });
-    //    });
-
-
-
-
-
-
-    //    $.ajax({
-    //        url: "/Selecionados/Gravar",
-    //        type: "POST",
-    //        contentType: "application/json",
-    //        data: JSON.stringify(selecionados),
-    //        success: function () {
-    //            alert("Dados gravados com sucesso!");
-    //        }
-    //    });
-    //});
 });

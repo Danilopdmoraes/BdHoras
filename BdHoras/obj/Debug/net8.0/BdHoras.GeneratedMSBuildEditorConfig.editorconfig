@@ -17,109 +17,109 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BdHoras
 build_property.RootNamespace = BdHoras
-build_property.ProjectDir = G:\PROJETOS\BdHoras\BdHoras\
+build_property.ProjectDir = D:\OneDrive\PROJETOS\BdHoras\BdHoras\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = G:\PROJETOS\BdHoras\BdHoras
+build_property.MSBuildProjectDirectory = D:\OneDrive\PROJETOS\BdHoras\BdHoras
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Areas/Identity/Pages/Account/Login.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Areas/Identity/Pages/Account/Register.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Areas/Identity/Pages/_ViewImports.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Areas/Identity/Pages/_ViewStart.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Funcionarios/CadastroFuncionarios.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Funcionarios/CadastroFuncionarios.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXENhZGFzdHJvRnVuY2lvbmFyaW9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Funcionarios/Index.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Funcionarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Gestores/CadastroGestores.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Gestores/CadastroGestores.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdG9yZXNcQ2FkYXN0cm9HZXN0b3Jlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Gestores/ConfirmarExcluirGrupo.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Gestores/ConfirmarExcluirGrupo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdG9yZXNcQ29uZmlybWFyRXhjbHVpckdydXBvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Gestores/DetalhesFuncionario.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Gestores/DetalhesFuncionario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdG9yZXNcRGV0YWxoZXNGdW5jaW9uYXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Gestores/EditarGrupoGestores.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Gestores/EditarGrupoGestores.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdG9yZXNcRWRpdGFyR3J1cG9HZXN0b3Jlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Gestores/Index.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Gestores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdG9yZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Gestores/MontarGrupoGestores.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Gestores/MontarGrupoGestores.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdG9yZXNcTW9udGFyR3J1cG9HZXN0b3Jlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Gestores/NovoApontamento.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Gestores/NovoApontamento.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdG9yZXNcTm92b0Fwb250YW1lbnRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Home/Index.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Home/Privacy.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Shared/Error.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Shared/_LoginPartial.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Vinculos/Index.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Vinculos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmluY3Vsb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/_ViewImports.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/_ViewStart.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/PROJETOS/BdHoras/BdHoras/Views/Shared/_Layout.cshtml]
+[D:/OneDrive/PROJETOS/BdHoras/BdHoras/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-w61w4hxj1c
