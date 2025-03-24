@@ -3,16 +3,19 @@ using BdHoras.Models;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
+using BdHoras.Services;
 
 namespace BdHoras.Repository
 {
     public class GestoresRepository : IGestoresRepository
     {
         private readonly ApplicationDbContext _context;
+        private readonly GestoresService _gestoresService;
 
-        public GestoresRepository(ApplicationDbContext context)
+        public GestoresRepository(ApplicationDbContext context, GestoresService gestoresService)
         {
             _context = context;
+            _gestoresService = gestoresService;
         }
 
 
@@ -46,6 +49,23 @@ namespace BdHoras.Repository
 
             return gestor;
         }
+
+        //public IEnumerable<FuncionariosModel> ObterFuncionariosPorGestor(int idGestor)
+        //{
+        //    return _context.TB_Vinculos
+        //        .Where(v => v.IdGestor == idGestor)
+        //        .Select(v => v.Funcionario)
+        //        .ToList();
+        //}
+
+        //public IEnumerable<FuncionariosModel> ObterFuncionariosPorGestor()
+        //{
+        //    var gestorSessao = _gestoresService.ObterGestorDaSessao();
+        //    return _context.TB_Vinculos
+        //        .Where(v => v.IdGestor == gestorSessao.IdGestor)
+        //        .Select(v => v.Funcionario)
+        //        .ToList();
+        //}
 
     }
 }

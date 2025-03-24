@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive\\PROJETOS\\BdHoras\\BdHoras\\BdHoras.csproj": {}
+    "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\BdHoras.csproj": {}
   },
   "projects": {
-    "D:\\OneDrive\\PROJETOS\\BdHoras\\BdHoras\\BdHoras.csproj": {
+    "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\BdHoras.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive\\PROJETOS\\BdHoras\\BdHoras\\BdHoras.csproj",
+        "projectUniqueName": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\BdHoras.csproj",
         "projectName": "BdHoras",
-        "projectPath": "D:\\OneDrive\\PROJETOS\\BdHoras\\BdHoras\\BdHoras.csproj",
+        "projectPath": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\BdHoras.csproj",
         "packagesPath": "C:\\Users\\Danilo\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive\\PROJETOS\\BdHoras\\BdHoras\\obj\\",
+        "outputPath": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\MicrosoftVisualStudioComponentes\\NuGetPackages"
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\Danilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -109,7 +108,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

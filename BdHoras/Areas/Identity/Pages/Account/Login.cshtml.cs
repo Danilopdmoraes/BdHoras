@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using BdHoras.Services;
 
 namespace BdHoras.Areas.Identity.Pages.Account
 {
@@ -22,15 +23,19 @@ namespace BdHoras.Areas.Identity.Pages.Account
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
         private readonly UserManager<IdentityUser> _userManager; // acrescentado após modificar UserName
+        private readonly IGestoresService _gestoresService; // acrescentado para saber se o Gestor possui ou não um Grupo, e redirecioná-lo
 
         public LoginModel(
             SignInManager<IdentityUser> signInManager, 
             ILogger<LoginModel> logger,
-            UserManager<IdentityUser> userManager)
+            UserManager<IdentityUser> userManager,
+            IGestoresService gestoresService
+            )
         {
             _signInManager = signInManager;
             _logger = logger;
             _userManager = userManager;
+            _gestoresService = gestoresService;
         }
 
         /// <summary>
@@ -148,7 +153,19 @@ namespace BdHoras.Areas.Identity.Pages.Account
                 {
                     _logger.LogInformation("User logged in.");
                     //return LocalRedirect(returnUrl);
-                    return LocalRedirect(Url.Content("~/Gestores/CadastroGestores")); // redireciona para a página de nomear o Grupo pela primeira vez
+
+                    var userIdentity = await _userManager.FindByEmailAsync(Input.Email);
+                    var possuiGrupo = await _gestoresService.ObterPossuiGrupoAsync(userIdentity.Id);
+
+                    if (string.IsNullOrEmpty(possuiGrupo))
+                    {
+                        return LocalRedirect(Url.Content("~/Gestores/CadastroGestores"));
+                    }
+                    else
+                    {
+                        return LocalRedirect(Url.Content("~/Gestores/MontarGrupoGestores"));
+                    }
+
                 }
                 if (result.RequiresTwoFactor)
                 {

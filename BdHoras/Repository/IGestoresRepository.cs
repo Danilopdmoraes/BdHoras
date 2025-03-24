@@ -12,5 +12,8 @@ namespace BdHoras.Repository
         GestoresModel ListarPorId(string userId);
 
         GestoresModel Atualizar(GestoresModel gestor, string userId);
+
+        //IEnumerable<FuncionariosModel> ObterFuncionariosPorGestor(int idGestor); // apresenta os funcionários do grupo do gestor 
+        //IEnumerable<FuncionariosModel> ObterFuncionariosPorGestor(); // apresenta os funcionários do grupo do gestor 
     }
 }

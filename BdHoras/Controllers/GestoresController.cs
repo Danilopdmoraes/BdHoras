@@ -6,25 +6,26 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
+using NuGet.Protocol.Core.Types;
 
 namespace BdHoras.Controllers
 {
     public class GestoresController : Controller
     {
         private readonly ApplicationDbContext _context;
-        private readonly IGestoresRepository _gestorRepository;
+        private readonly IGestoresRepository _gestoresRepository;
         private readonly IGestoresService _gestoresService;
 
-        public GestoresController(IGestoresRepository gestorRepository, ApplicationDbContext context, IGestoresService gestoresService)
+        public GestoresController(IGestoresRepository gestoresRepository, ApplicationDbContext context, IGestoresService gestoresService)
         {
             _context = context;
-            _gestorRepository = gestorRepository;
+            _gestoresRepository = gestoresRepository;
             _gestoresService = gestoresService;
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
 
 
         [Authorize]
@@ -64,7 +65,7 @@ namespace BdHoras.Controllers
         [HttpPost]
         public IActionResult Criar(GestoresModel gestor) 
         {
-            _gestorRepository.Adicionar(gestor);
+            _gestoresRepository.Adicionar(gestor);
             return RedirectToAction("MontarGrupoGestores");
         }
 
@@ -73,7 +74,7 @@ namespace BdHoras.Controllers
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            _gestorRepository.Atualizar(gestor, userId);
+            _gestoresRepository.Atualizar(gestor, userId);
             return RedirectToAction("MontarGrupoGestores");
         }
 
@@ -86,6 +87,36 @@ namespace BdHoras.Controllers
                 .ToList();
             return Json(funcionarios);
         }
+
+
+        //public IEnumerable<FuncionariosModel> ObterFuncionariosPorGestor(int idGestor)
+        //{
+        //    return _gestoresRepository.ObterFuncionariosPorGestor(idGestor);
+        //}
+
+        public IActionResult Index()
+        {
+            //var gestor = _gestoresService.ObterGestor;
+            //var funcionarios = ObterFuncionariosPorGestor(idGestor);
+            //return View(funcionarios);
+
+            //_gestoresService.CarregarGestorAsync();
+
+            //var gestor = _gestoresService.ObterGestorDaSessao();
+            //ViewData["Gestor"] = gestor;
+
+            return View();
+        }
+
+        //public async Task<IActionResult> Dashboard()
+        //{
+        //    await _gestoresService.CarregarGestorAsync();
+
+        //    var gestor = _gestoresService.ObterGestorDaSessao();
+        //    ViewData["Gestor"] = gestor;
+
+        //    return View();
+        //}
 
     }
 }

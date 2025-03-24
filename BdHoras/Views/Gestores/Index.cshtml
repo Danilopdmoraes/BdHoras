@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<FuncionariosModel>
+@{
     ViewData["Title"] = "Gestores";
 }
 
@@ -29,18 +30,19 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Silvio Santos</td>
-                        <td>07:00</td>
-                    </tr>
-                    <tr>
-                        <td>Fausto Silva</td>
-                        <td>-12:00</td>
-                    </tr>
-                    <tr>
-                        <td>Sérgio Malandro</td>
-                        <td>03:00</td>
-                    </tr>
+
+                    @foreach (var funcionario in Model)
+                    {
+                        <tr>
+                            <td>@funcionario.NomeFuncionario</td>
+                        </tr>
+                    }
+
+                    @* <tr> *@
+                    @*     <td>Silvio Santos</td> *@
+                    @*     <td>07:00</td> *@
+                    @* </tr> *@
+
                 </tbody>
             </table>
         </div>

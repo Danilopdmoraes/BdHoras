@@ -18,6 +18,10 @@ namespace BdHoras.Models
         [Required, EmailAddress]
         public string EmailFuncionario { get; set; }
 
+        public string? NomeGrupo { get; set; } // adicionado, pois se for null, o funcionário poderá ser adicionado a um grupo, senão não poderá.
+
+        public string? PerfilFuncionario { get; set; } // adicionado para delegar um perfil com autorização para realizar apontamentos.
+
 
         public virtual VinculosModel Vinculo { get; set; }
         public virtual ICollection<OcorrenciasModel> Ocorrencias { get; set; }

@@ -19,11 +19,11 @@ namespace BdHoras.Filters
             var controller = context.Controller as Controller;
             if (controller != null)
             {
-                var userId = context.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier); // obtém o ID do Identity
+                var idIdentity = context.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier); // obtém o ID do Identity
 
-                if (!string.IsNullOrEmpty(userId))
+                if (!string.IsNullOrEmpty(idIdentity))
                 {
-                    var gestor = await _gestoresService.ObterGestorPorIdExclusivoAsync(userId); // envia o ID do Identity para comparação com o ID re
+                    var gestor = await _gestoresService.ObterGestorPorIdExclusivoAsync(idIdentity); // envia o ID do Identity para comparação com o ID re
                     if(gestor != null)
                     {
                         controller.ViewData["IdGestor"] = gestor.IdGestor;

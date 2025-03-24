@@ -17,7 +17,7 @@ namespace BdHoras.Models
         public string EmailGestor { get; set; }
 
 
-        public string NomeGrupo { get; set; }
+        public string? NomeGrupo { get; set; } //trocado para nullable, pois é assim que saberemos se o gestor possui grupo ou não (para montar um)
 
 
         public virtual ICollection<VinculosModel> Vinculos { get; set; }

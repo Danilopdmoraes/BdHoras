@@ -1,70 +1,297 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\OneDrive\\PROJETOS\\BdHoras\\",
+  "WorkspaceRootPath": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|d:\\onedrive\\projetos\\bdhoras\\bdhoras\\views\\gestores\\montargrupogestores.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\controllers\\vinculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\controllers\\vinculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\models\\vinculosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\models\\vinculosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\views\\vinculos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\views\\vinculos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\controllers\\gestorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\controllers\\gestorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BdHoras/True/SqlTable/dbo.TB_Funcionarios.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\views\\gestores\\montargrupogestores.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\views\\gestores\\montargrupogestores.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|d:\\onedrive\\projetos\\bdhoras\\bdhoras\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\models\\viewmodels\\gestoresfuncionariosvinculosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\models\\viewmodels\\gestoresfuncionariosvinculosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BdHoras/True/SqlTable/dbo.TB_Vinculos.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\models\\gestoresmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\models\\gestoresmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\repository\\gestoresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\repository\\gestoresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\repository\\igestoresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\repository\\igestoresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\views\\gestores\\cadastrogestores.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\views\\gestores\\cadastrogestores.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|g:\\projetos\\bdhoras - quebrou 23h30\\bdhoras\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C5E32199-6462-431C-8608-64E92DFADF24}|BdHoras\\BdHoras.csproj|solutionrelative:bdhoras\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 16,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MontarGrupoGestores.cshtml",
-              "DocumentMoniker": "D:\\OneDrive\\PROJETOS\\BdHoras\\BdHoras\\Views\\Gestores\\MontarGrupoGestores.cshtml",
-              "RelativeDocumentMoniker": "BdHoras\\Views\\Gestores\\MontarGrupoGestores.cshtml",
-              "ToolTip": "D:\\OneDrive\\PROJETOS\\BdHoras\\BdHoras\\Views\\Gestores\\MontarGrupoGestores.cshtml",
-              "RelativeToolTip": "BdHoras\\Views\\Gestores\\MontarGrupoGestores.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAC8AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-22T10:37:55.4Z",
+              "DocumentIndex": 1,
+              "Title": "VinculosController.cs",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Controllers\\VinculosController.cs",
+              "RelativeDocumentMoniker": "BdHoras\\Controllers\\VinculosController.cs",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Controllers\\VinculosController.cs",
+              "RelativeToolTip": "BdHoras\\Controllers\\VinculosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T00:16:42.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "dbo.TB_Vinculos [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BdHoras/True/SqlTable/dbo.TB_Vinculos.sql",
-              "ToolTip": "dbo.TB_Vinculos [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-03-22T10:25:34.563Z",
+              "Title": "VinculosModel.cs",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Models\\VinculosModel.cs",
+              "RelativeDocumentMoniker": "BdHoras\\Models\\VinculosModel.cs",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Models\\VinculosModel.cs",
+              "RelativeToolTip": "BdHoras\\Models\\VinculosModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T00:16:34.856Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "site.js",
-              "DocumentMoniker": "D:\\OneDrive\\PROJETOS\\BdHoras\\BdHoras\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "BdHoras\\wwwroot\\js\\site.js",
-              "ToolTip": "D:\\OneDrive\\PROJETOS\\BdHoras\\BdHoras\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "BdHoras\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAADsAAAAAAAAAAAAkwFQAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-22T10:14:37.401Z",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Views\\Vinculos\\Index.cshtml",
+              "RelativeDocumentMoniker": "BdHoras\\Views\\Vinculos\\Index.cshtml",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Views\\Vinculos\\Index.cshtml",
+              "RelativeToolTip": "BdHoras\\Views\\Vinculos\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-24T00:16:27.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BdHoras\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BdHoras\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-24T00:03:29.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "dbo.TB_Funcionarios [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BdHoras/True/SqlTable/dbo.TB_Funcionarios.sql",
+              "ToolTip": "dbo.TB_Funcionarios [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-23T23:34:14.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GestoresModel.cs",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Models\\GestoresModel.cs",
+              "RelativeDocumentMoniker": "BdHoras\\Models\\GestoresModel.cs",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Models\\GestoresModel.cs",
+              "RelativeToolTip": "BdHoras\\Models\\GestoresModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T22:54:47.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GestoresFuncionariosVinculosViewModel.cs",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Models\\ViewModels\\GestoresFuncionariosVinculosViewModel.cs",
+              "RelativeDocumentMoniker": "BdHoras\\Models\\ViewModels\\GestoresFuncionariosVinculosViewModel.cs",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Models\\ViewModels\\GestoresFuncionariosVinculosViewModel.cs",
+              "RelativeToolTip": "BdHoras\\Models\\ViewModels\\GestoresFuncionariosVinculosViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T22:53:30.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MontarGrupoGestores.cshtml",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Views\\Gestores\\MontarGrupoGestores.cshtml",
+              "RelativeDocumentMoniker": "BdHoras\\Views\\Gestores\\MontarGrupoGestores.cshtml",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Views\\Gestores\\MontarGrupoGestores.cshtml",
+              "RelativeToolTip": "BdHoras\\Views\\Gestores\\MontarGrupoGestores.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAADwv04AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T22:19:32.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BdHoras\\Views\\Home\\Index.cshtml",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BdHoras\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T22:14:20.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IGestoresRepository.cs",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Repository\\IGestoresRepository.cs",
+              "RelativeDocumentMoniker": "BdHoras\\Repository\\IGestoresRepository.cs",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Repository\\IGestoresRepository.cs",
+              "RelativeToolTip": "BdHoras\\Repository\\IGestoresRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T21:07:08.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GestoresRepository.cs",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Repository\\GestoresRepository.cs",
+              "RelativeDocumentMoniker": "BdHoras\\Repository\\GestoresRepository.cs",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Repository\\GestoresRepository.cs",
+              "RelativeToolTip": "BdHoras\\Repository\\GestoresRepository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwBsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T21:07:23.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GestoresController.cs",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Controllers\\GestoresController.cs",
+              "RelativeDocumentMoniker": "BdHoras\\Controllers\\GestoresController.cs",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Controllers\\GestoresController.cs",
+              "RelativeToolTip": "BdHoras\\Controllers\\GestoresController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T17:08:14.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CadastroGestores.cshtml",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Views\\Gestores\\CadastroGestores.cshtml",
+              "RelativeDocumentMoniker": "BdHoras\\Views\\Gestores\\CadastroGestores.cshtml",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Views\\Gestores\\CadastroGestores.cshtml",
+              "RelativeToolTip": "BdHoras\\Views\\Gestores\\CadastroGestores.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T20:44:39.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "BdHoras\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "BdHoras\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAkwBgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T16:34:51.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "BdHoras\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "BdHoras\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T16:33:19.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "BdHoras\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "BdHoras\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-23T16:15:21.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Program.cs",
+              "RelativeDocumentMoniker": "BdHoras\\Program.cs",
+              "ToolTip": "G:\\PROJETOS\\BdHoras - quebrou 23h30\\BdHoras\\Program.cs",
+              "RelativeToolTip": "BdHoras\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T15:44:24.994Z",
               "EditorCaption": ""
             }
           ]
